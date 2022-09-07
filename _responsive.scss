@@ -1,0 +1,43 @@
+@include media-lg{
+    
+                #day1-temp{
+                    font-size: 9rem;
+                }
+                
+}
+
+@include media-md{
+    
+    .dates{
+        margin-top: 11rem;  
+        color: $secondaryColor; 
+        display: grid !important;
+        grid-template-columns: 30% 30% 30% ;
+        grid-template-rows: 50% 50%;
+        
+    }
+}
+
+@include media-sm{
+    // body{
+    //     display: none;
+    // }
+
+    .dates{
+        margin-top: 2rem !important;  
+        color: $secondaryColor; 
+        display: grid !important;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50%;
+        
+    }
+
+    .weather-details-part{
+        flex-direction: column !important;
+    }
+
+    .second-section{
+        margin-left: 4rem !important;
+    }
+
+}

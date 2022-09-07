@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Uchen&display=swap');
+
+@import '_config.scss', '_responsive.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+    background: url("./images/pexels-roberto-nickson-2775196.jpg") no-repeat fixed;
+    background-size: cover;
+    
+    
+
+        .part-one{
+            display: block;
+            position: relative;
+
+            
+            .weather-text{
+                font-size: 2rem;
+                color: white;
+                margin: 2rem 3rem;
+            }
+
+            .separator1{
+                width: 100%;
+                height: 1px;
+                background-color: white;
+                
+            }
+         
+            
+    
+            .container{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                background: rgba(0, 0, 0, 0.7);
+                
+                border-radius: 10px;
+                margin-bottom: 2rem;
+
+                
+            
+                .search-part{
+                    padding: 2rem 6vw 3rem;
+
+                    .info-text{
+                        font-size: 1.3rem;
+                        color: white;
+                    }
+
+                    .info-text.pending{
+            
+                        background: #bef1be;
+                        border-radius: 6px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        padding: 15px 15px 15px 15px;
+                }
+        
+                .info-text.error{
+                        background: rgb(240, 134, 134);
+                        border-radius: 6px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        padding: 15px 15px 15px 15px;
+                    }
+                   
+            
+                    input{
+                        outline: none;
+                        padding: 1rem 1rem;
+                        width: 18rem;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 1rem;
+
+                        &:focus{
+                            border: none;
+                            background: grey;
+                            color: white;
+                        }
+                    }
+            
+                    .search-btn{
+                        padding: 1rem 1rem;
+                        width: 20rem;
+                        border: none;
+                        border-radius: 5px;
+                        margin-top: 1rem;
+                        font-size: 1rem;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: grey;
+                        }
+                    }
+            
+                    h2{
+                        color: white;
+                        text-align: center;
+                    }
+            
+                    .location-btn{
+                        padding: 1rem 1rem;
+                        width: 20rem;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 1rem;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: grey;
+                        }
+                    } 
+                }
+            }
+        }
+        
+
+        
+
+.part-two{
+    display: none;
+
+    .weather-details-part{
+        color: $secondaryColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+
+
+        img{
+            height: 5rem;
+        }  
+
+        .first-section{
+            margin-top: 2rem;
+            margin-left: 4rem;
+
+            .svg-el{
+                color: white;
+            }
+            
+            .back-btn{
+                cursor: pointer;
+            }
+
+            .icon-el{
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            .description-el{
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+
+            .location-el{
+                font-size: 1.3rem;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            .temp-el{
+                font-size: 5rem;
+                font-weight: 600;
+            }
+
+            .deg-symbol{
+                font-size: 5rem;
+                font-weight: 600;
+            }
+        }
+
+        .second-section{
+            margin-top: 2rem;
+            margin-right: 4rem;
+
+            h2{
+                margin-bottom: 3rem;
+            }
+
+            .humidity-text{
+                font-size: 1.6rem;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            .feels-text{
+                font-size: 1.6rem;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            .wind-text{
+                font-size: 1.6rem;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            .humidity-el{
+                font-size: 2rem;
+                font-weight: 600;
+                padding-left: 1.3rem;
+            }
+
+            .feels-like-el{
+                font-size: 2rem;
+                font-weight: 600;
+                padding-left: 1.3rem;
+            }
+
+            .wind-speed-el{
+                font-size: 2rem;
+                font-weight: 600;
+                padding-left: 1.3rem;
+            }
+
+            .percent-el{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .deg-symbol2{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .wind-symbol{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+        }
+
+    }
+
+    .dates{
+        margin-top: 11rem;  
+        color: $secondaryColor; 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+
+        li{
+            list-style: none;
+        }
+            .date-1{
+                
+                @include dates-padding;
+                box-shadow: 3px 10px 41px -5px rgba(0,0,0,0.1);
+                -webkit-box-shadow: 3px 10px 41px -5px rgba(0,0,0,1);
+                -moz-box-shadow: 3px 10px 41px -5px rgba(0,0,1);
+                
+
+                &:hover{
+                    @include dates-box-shadow;
+                }
+
+                .day-1{
+                    @include dates-days-content
+                }
+
+                #day1-temp{
+                    font-size: 5vw;
+                }
+
+                span{
+                    @include deg-font-size;
+                }
+                
+            }
+
+            .date-2{
+                @include dates-padding;
+                
+
+                &:hover{
+                    @include dates-box-shadow;
+                }
+
+                .day-2{
+                    @include dates-days-content
+                }
+
+                #day2-temp{
+                    font-size: 5vw;
+                }
+
+                span{
+                    @include deg-font-size;
+                }
+                
+            }
+
+            .date-3{
+                @include dates-padding;
+
+                &:hover{
+                    @include dates-box-shadow;
+                }
+
+                .day-3{
+                    @include dates-days-content
+                }
+
+                #day3-temp{
+                    font-size: 5vw;
+                }
+
+                span{
+                    @include deg-font-size;
+                }
+                
+            }
+
+            .date-4{
+                @include dates-padding;
+
+                &:hover{
+                    @include dates-box-shadow;
+                }
+
+                .day-4{
+                    @include dates-days-content
+                }
+
+                #day4-temp{
+                    font-size: 5vw;
+                }
+
+                span{
+                    @include deg-font-size;
+                }
+                
+            }
+
+            .date-5{
+                @include dates-padding;
+
+                &:hover{
+                    @include dates-box-shadow;
+                }
+
+                .day-5{
+                    @include dates-days-content
+                }
+
+                #day5-temp{
+                    font-size: 5vw;
+                }
+
+                span{
+                    @include deg-font-size;
+                }
+                
+            }
+    }    
+}
+}
+
+
+    

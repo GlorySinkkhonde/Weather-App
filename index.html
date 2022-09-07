@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../Font Awesome/css2/all.min.css">
+</head>
+<body>
+        <div class="part-one">
+            <div class="container">
+                <h1 class="weather-text">Weather</h1>
+                    <div class="separator1"></div>
+                <section class="search-part">
+                    <p class="info-text">Pleaser enter a valid city name</p>
+                    <input type="text" placeholder="Enter A Valid City Name"><br> 
+                    <button class="search-btn">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <h2>OR</h2> <br>
+                    <button class="location-btn"> <i class="fa-solid fa-location-dot " ></i> Get Device Location</button>
+                </section>
+                
+            </div>
+        </div>
+
+        <div class="part-two">
+            <section class="weather-details-part">
+    
+                <div class="first-section">
+                    <h2 class="back-btn"> 
+                        <span > <i class="fa-solid fa-arrow-left-long"></i> back</span
+                    ></h2>
+
+                    <img class="weather-icons" src="./images/Weather-Icons/cloud-sun-solid white.svg">
+                    
+
+                    <h1> <span class="description-el">--</span> </h1>
+                    <h2> <span ><i class="fa-solid fa-location-dot"></i></span> <span class="location-el">--</span> </h2>
+
+                    <h2> <span  class="temp-el">--</span> <span class="deg-symbol">°C</span> </h2>
+                </div>
+        
+                <div class="second-section">
+                    <h2 class="h2-el"> <span><i class="fa-solid fa-droplet"></i></span> <span class="humidity-text">Humidity</span> <br> <span class="humidity-el">--</span> <span class="percent-el">%</span></h2>
+
+                    <h2> <span><i class="fa-solid fa-temperature-full"></i></span> <span class="feels-text">Feels like</span> <br> <span class="feels-like-el">--</span> <span class="deg-symbol2">°C</span> </h2>
+
+                    <h2> <span><i class="fa-solid fa-wind"></i></span> <span class="wind-text">Wind Speed</span> <br> <span class="wind-speed-el">--</span> <span class="wind-symbol">m/s</span> </h2>
+                </div>
+        
+           </section>
+        
+        
+            <div class="dates">
+                <div class="date-1">
+                    <h2 class="day-1">--</h2>
+                    <li> <span id="day1-temp">--</span> <span>°C</span> </li>
+                </div>
+
+                <div class="date-2">
+                    <h2 class="day-2">--</h2>
+                    <li> <span id="day2-temp">--</span> <span>°C</span> </li>
+                </div>
+
+                <div class="date-3">
+                    <h2 class="day-3">--</h2>
+                    <li> <span id="day3-temp">--</span> <span>°C</span> </li>
+                </div>
+
+                <div class="date-4">
+                    <h2 class="day-4">--</h2>
+                    <li><span id="day4-temp">--</span> <span>°C</span> </li>
+                </div>
+
+                <div class="date-5">
+                    <h2 class="day-5">--</h2>
+                    <li><span id="day5-temp">--</span> <span>°C</span> </li>
+                </div>
+                    
+    
+            </div>
+        
+        </div>
+        
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+

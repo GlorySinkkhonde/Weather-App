@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Uchen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Uchen&display=swap");
+@media only screen and (max-width: 1320px) {
+  #day1-temp {
+    font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .dates {
+    margin-top: 11rem;
+    color: white;
+    display: grid !important;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dates {
+    margin-top: 2rem !important;
+    color: white;
+    display: grid !important;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+  }
+  .weather-details-part {
+    flex-direction: column !important;
+  }
+  .second-section {
+    margin-left: 4rem !important;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+  background: url("./images/pexels-roberto-nickson-2775196.jpg") no-repeat fixed;
+  background-size: cover;
+}
+body .part-one {
+  display: block;
+  position: relative;
+}
+body .part-one .weather-text {
+  font-size: 2rem;
+  color: white;
+  margin: 2rem 3rem;
+}
+body .part-one .separator1 {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+body .part-one .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+body .part-one .container .search-part {
+  padding: 2rem 6vw 3rem;
+}
+body .part-one .container .search-part .info-text {
+  font-size: 1.3rem;
+  color: white;
+}
+body .part-one .container .search-part .info-text.pending {
+  background: #bef1be;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+body .part-one .container .search-part .info-text.error {
+  background: rgb(240, 134, 134);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+body .part-one .container .search-part input {
+  outline: none;
+  padding: 1rem 1rem;
+  width: 18rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+body .part-one .container .search-part input:focus {
+  border: none;
+  background: grey;
+  color: white;
+}
+body .part-one .container .search-part .search-btn {
+  padding: 1rem 1rem;
+  width: 20rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+body .part-one .container .search-part .search-btn:hover {
+  background-color: grey;
+}
+body .part-one .container .search-part h2 {
+  color: white;
+  text-align: center;
+}
+body .part-one .container .search-part .location-btn {
+  padding: 1rem 1rem;
+  width: 20rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+body .part-one .container .search-part .location-btn:hover {
+  background-color: grey;
+}
+body .part-two {
+  display: none;
+}
+body .part-two .weather-details-part {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .part-two .weather-details-part img {
+  height: 5rem;
+}
+body .part-two .weather-details-part .first-section {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+body .part-two .weather-details-part .first-section .svg-el {
+  color: white;
+}
+body .part-two .weather-details-part .first-section .back-btn {
+  cursor: pointer;
+}
+body .part-two .weather-details-part .first-section .icon-el {
+  font-size: 2rem;
+  margin: 0;
+}
+body .part-two .weather-details-part .first-section .description-el {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+body .part-two .weather-details-part .first-section .location-el {
+  font-size: 1.3rem;
+  font-weight: 100;
+  font-style: italic;
+}
+body .part-two .weather-details-part .first-section .temp-el {
+  font-size: 5rem;
+  font-weight: 600;
+}
+body .part-two .weather-details-part .first-section .deg-symbol {
+  font-size: 5rem;
+  font-weight: 600;
+}
+body .part-two .weather-details-part .second-section {
+  margin-top: 2rem;
+  margin-right: 4rem;
+}
+body .part-two .weather-details-part .second-section h2 {
+  margin-bottom: 3rem;
+}
+body .part-two .weather-details-part .second-section .humidity-text {
+  font-size: 1.6rem;
+  font-weight: 100;
+  font-style: italic;
+}
+body .part-two .weather-details-part .second-section .feels-text {
+  font-size: 1.6rem;
+  font-weight: 100;
+  font-style: italic;
+}
+body .part-two .weather-details-part .second-section .wind-text {
+  font-size: 1.6rem;
+  font-weight: 100;
+  font-style: italic;
+}
+body .part-two .weather-details-part .second-section .humidity-el {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 1.3rem;
+}
+body .part-two .weather-details-part .second-section .feels-like-el {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 1.3rem;
+}
+body .part-two .weather-details-part .second-section .wind-speed-el {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 1.3rem;
+}
+body .part-two .weather-details-part .second-section .percent-el {
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .part-two .weather-details-part .second-section .deg-symbol2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .part-two .weather-details-part .second-section .wind-symbol {
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .part-two .dates {
+  margin-top: 11rem;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .part-two .dates li {
+  list-style: none;
+}
+body .part-two .dates .date-1 {
+  padding: 2rem 3.5rem;
+  box-shadow: 3px 10px 41px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 10px 41px -5px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 10px 41px -5px rgb(0, 0, 1);
+}
+body .part-two .dates .date-1:hover {
+  box-shadow: 3px 10px 41px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 10px 41px -5px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 10px 41px -5px rgb(0, 0, 1);
+}
+body .part-two .dates .date-1 .day-1 {
+  font-size: 1.2vw;
+  font-style: italic;
+  margin-bottom: 5rem;
+  margin-left: -1.5rem;
+}
+body .part-two .dates .date-1 #day1-temp {
+  font-size: 5vw;
+}
+body .part-two .dates .date-1 span {
+  font-size: 3vw;
+}
+body .part-two .dates .date-2 {
+  padding: 2rem 3.5rem;
+}
+body .part-two .dates .date-2:hover {
+  box-shadow: 3px 10px 41px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 10px 41px -5px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 10px 41px -5px rgb(0, 0, 1);
+}
+body .part-two .dates .date-2 .day-2 {
+  font-size: 1.2vw;
+  font-style: italic;
+  margin-bottom: 5rem;
+  margin-left: -1.5rem;
+}
+body .part-two .dates .date-2 #day2-temp {
+  font-size: 5vw;
+}
+body .part-two .dates .date-2 span {
+  font-size: 3vw;
+}
+body .part-two .dates .date-3 {
+  padding: 2rem 3.5rem;
+}
+body .part-two .dates .date-3:hover {
+  box-shadow: 3px 10px 41px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 10px 41px -5px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 10px 41px -5px rgb(0, 0, 1);
+}
+body .part-two .dates .date-3 .day-3 {
+  font-size: 1.2vw;
+  font-style: italic;
+  margin-bottom: 5rem;
+  margin-left: -1.5rem;
+}
+body .part-two .dates .date-3 #day3-temp {
+  font-size: 5vw;
+}
+body .part-two .dates .date-3 span {
+  font-size: 3vw;
+}
+body .part-two .dates .date-4 {
+  padding: 2rem 3.5rem;
+}
+body .part-two .dates .date-4:hover {
+  box-shadow: 3px 10px 41px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 10px 41px -5px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 10px 41px -5px rgb(0, 0, 1);
+}
+body .part-two .dates .date-4 .day-4 {
+  font-size: 1.2vw;
+  font-style: italic;
+  margin-bottom: 5rem;
+  margin-left: -1.5rem;
+}
+body .part-two .dates .date-4 #day4-temp {
+  font-size: 5vw;
+}
+body .part-two .dates .date-4 span {
+  font-size: 3vw;
+}
+body .part-two .dates .date-5 {
+  padding: 2rem 3.5rem;
+}
+body .part-two .dates .date-5:hover {
+  box-shadow: 3px 10px 41px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 10px 41px -5px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 10px 41px -5px rgb(0, 0, 1);
+}
+body .part-two .dates .date-5 .day-5 {
+  font-size: 1.2vw;
+  font-style: italic;
+  margin-bottom: 5rem;
+  margin-left: -1.5rem;
+}
+body .part-two .dates .date-5 #day5-temp {
+  font-size: 5vw;
+}
+body .part-two .dates .date-5 span {
+  font-size: 3vw;
+}/*# sourceMappingURL=main.css.map */

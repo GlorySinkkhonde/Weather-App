@@ -1,0 +1,41 @@
+$primaryColor: rgba(0,0,0.5) ;
+$secondaryColor: white;
+
+@mixin dates-padding {
+    padding: 2rem 3.5rem;
+}
+
+@mixin dates-box-shadow{
+    box-shadow: 3px 10px 41px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 10px 41px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 10px 41px -5px rgba(0,0,1);
+}
+
+@mixin dates-days-content{
+    font-size: 1.2vw;
+    font-style: italic;
+    margin-bottom: 5rem;
+    margin-left: -1.5rem;
+}
+
+@mixin deg-font-size{
+    font-size: 3vw;
+}
+
+@mixin media-lg{
+    @media only screen and (max-width: 1320px) {
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media only screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin media-sm{
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
