@@ -23,7 +23,7 @@ const day4Temp = document.querySelector("#day4-temp");
 const day5Temp = document.querySelector("#day5-temp");
 let infoTxt = document.querySelector(".info-text")
 const weatherIcons = document.querySelector(".weather-icons");
-const apiKey = "dc8e215b26a642590a21f9c29ac688a7";
+
 let api;
 
 inputEl.addEventListener("keyup", (e) =>{
